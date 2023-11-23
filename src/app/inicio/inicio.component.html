@@ -1,0 +1,23 @@
+<div *ngIf="empezar">
+  <app-detalle [empezar]="empezar" [tiempoXimagen]="tiempoXimagen" [tiempoTotal]="tiempoTotal"></app-detalle>
+</div>
+<!-- <div>
+  <button class="btn btn-primary" (click)="empezar=true">empezar</button>
+</div> -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+        <h2>Examen Front</h2>
+        <h4>Autor: Ivan Morales</h4>
+        <br>
+        <div class="form-group pb-3">
+          <label for="tiempo" style="font-weight: bold;">Tiempo por Imagen</label>
+          <input type="text" class="form-control" id="tiempo" placeholder="Ingrese el tiempo (en segundos) por cada imagen" [(ngModel)]="tiempoXimagen">
+        </div>
+        <div class="form-group pb-3">
+          <label for="total" style="font-weight: bold;">Tiempo Total</label>
+          <input type="text" class="form-control" id="total" placeholder="Ingrese el tiempo total (en segundos)" [(ngModel)]="tiempoTotal">
+        </div>
+        <button class="btn btn-primary" (click)="fnEmpezar()">empezar</button>
+    </div>
+  </div>

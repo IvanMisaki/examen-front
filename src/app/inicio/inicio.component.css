@@ -1,0 +1,10 @@
+:host {
+  padding-top:10px;
+  display: block;
+  width: 100%;
+  height: 700px;
+  background-image: url('../../assets/img/fondoinicio.jpg'); /* Ruta a tu imagen en assets */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Otras propiedades de estilo para el fondo */
+}
